@@ -12,7 +12,7 @@ Products Retail app uses Timbu.cloud api to fetch products and show relevant inf
 
 ## Demo
 
-Try out the app on Appetize.io: [Simple Shopping App Demo](https://appetize.io)
+Try out the app on Appetize.io: [Products Retaill Demo](https://appetize.io)
 
 ## Getting Started
 
@@ -27,13 +27,18 @@ These instructions will help you set up the project on your local machine for de
 ### Installation
 
 1. Clone the repository: 
-   `https://github.com/Tommzydanz/shopping-app.git`
+   `https://github.com/Tommzydanz/ProductsRetail.git`
+
 2. Navigate to the project directory: 
-   `cd shopping-app`
+   `cd ProductsRetail`
+
 3. Install dependencies: `npx expo install`
+
    or If you're using yarn: `yarn install`
+
 4. Start the Expo development server:
    `npx expo start`
+
 5. Use the `Expo Go app` on your mobile device to scan the QR code from the terminal or run on an emulator.
 
 
