@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   descriptionName: {
-    fontSize: 16,
+    fontSize: 15,
     color: 'gray',
   },
   description: {
