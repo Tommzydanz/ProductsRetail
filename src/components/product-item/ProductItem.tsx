@@ -14,7 +14,7 @@ const ProductItem: ProductItemProps = ({ product }) => {
   return (
     <TouchableOpacity style={styles.container} onPress={handlePress}>
       <Image style={styles.image} source={{uri: `https://api.timbu.cloud/images/${product.photos[0].url}`}} resizeMode="contain" /> 
-      <Text style={styles.name} numberOfLines={1}>
+      <Text style={styles.name} numberOfLines={2}>
         {product.name}
       </Text>
       <Text style={styles.price}>
