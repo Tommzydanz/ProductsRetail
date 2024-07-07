@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { View, FlatList, StyleSheet, Text} from "react-native";
+import { View, FlatList, StyleSheet, Text, TouchableOpacity} from "react-native";
 import ProductItem from "../../components/product-item/ProductItem";
 import { Ionicons } from "@expo/vector-icons"
 import { getProducts, Product } from "../../api/products";
@@ -50,6 +50,9 @@ const Products: React.FC = () => {
       <View style={styles.otherContainer}>
         <Ionicons name="alert-circle-outline" size={40} color="red" />
         <Text>Error: {error}</Text>
+        <TouchableOpacity style={styles.tryAgainButton} onPress={fetchProducts}>
+          <Text style={styles.tryAgainButtonText}>Try Again</Text>
+        </TouchableOpacity>
       </View>
     );
   }
@@ -80,7 +83,17 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-  }
+  },
+  tryAgainButton: {
+    backgroundColor: 'orange',
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    borderRadius: 5,
+  },
+  tryAgainButtonText: {
+    color: 'white',
+    fontWeight: 'bold',
+  },
 });
 
 export default Products;
