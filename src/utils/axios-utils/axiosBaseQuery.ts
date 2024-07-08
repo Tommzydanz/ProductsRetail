@@ -40,15 +40,15 @@ export const createAxiosQuery = ({
     headers = {},
   }: QueryParams): Promise<QueryResult<T>> => {
     try {
-      const fullUrl = new URL(baseUrl + url);
-      fullUrl.searchParams.append('organization_id', organizationId);
-      fullUrl.searchParams.append('Appid', appId);
-      fullUrl.searchParams.append('Apikey', apiKey);
-
+      const fullUrl = baseUrl + url + 
+      '?organization_id=' + encodeURIComponent(organizationId) + 
+      '&Appid=' + encodeURIComponent(appId) + 
+      '&Apikey=' + encodeURIComponent(apiKey);
+    
       console.log(fullUrl)
 
       const result: AxiosResponse<T> = await axios({
-        url: fullUrl.toString(),
+        url: fullUrl,
         method,
         data: body,
         headers: { ...baseHeaders, ...headers },
