@@ -1,4 +1,4 @@
-import { API_URL, CURRENT_ENV } from "@env";
+import { API_KEY, API_URL, APP_ID, CURRENT_ENV, ORG_ID } from "@env";
 import Constants from "expo-constants";
 import * as Updates from "expo-updates";
 
@@ -27,11 +27,11 @@ export const app_theme_color_storage = "@mainapp.theme.local.storage";
 // live url as default
 export const baseUrl = process.env.API_URL ?? API_URL ?? "https://api-dev.shakohub.com/v1";
 
-export const appId = process.env.APP_ID ?? "app_id";
+export const appId = process.env.APP_ID ?? APP_ID;
 
-export const apiKey = process.env.API_KEY ?? "API_KEY";
+export const apiKey = process.env.API_KEY ?? API_KEY;
 
-export const organizationId = process.env.ORG_ID ?? "organization_id";
+export const organizationId = process.env.ORG_ID ?? ORG_ID;
 
 export const BACKGROUND_NOTIFICATION_TASK = "BACKGROUND-NOTIFICATION-TASK";
 
