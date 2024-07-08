@@ -13,8 +13,9 @@ Products Retail app uses Timbu.cloud api to fetch products and show relevant inf
 
 ## Demo
 
-Try out the app on Appetize.io: [Products Retaill Demo](https://appetize.io/app/b_nvyt27a7xjdtjsd7q2hq2uqw6e)
-Download apk build: [ProductsRetailApk](https://expo.dev/accounts/tommzydanz/projects/ProductsRetail/builds/46b20d27-cb3f-4c11-855a-936c7e88efbd) link expires in 13days
+- Try out the app on Appetize.io: [Products Retaill Demo](https://appetize.io/app/b_nvyt27a7xjdtjsd7q2hq2uqw6e)
+
+- Download apk build: [ProductsRetailApk](https://expo.dev/accounts/tommzydanz/projects/ProductsRetail/builds/46b20d27-cb3f-4c11-855a-936c7e88efbd) link expires in 13days
 
 ## Getting Started
 
