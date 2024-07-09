@@ -5,10 +5,26 @@
   "build": {
     "development": {
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      "env": {
+        "API_URL": "https://api.timbu.cloud",
+        "API_KEY": "API_KEY",
+        "APP_ID": "APP_ID",
+        "ORG_ID": "ORG_ID"
+      }
     },
     "preview": {
-    "distribution": "internal"
+    "distribution": "internal",
+    "channel": "development",
+    "android": {
+      "buildType": "apk"
+    },
+    "env": {
+        "API_URL": "API_URL",
+        "API_KEY": "API_KEY",
+        "APP_ID": "APP_ID",
+        "ORG_ID": "ORG_ID"
+      }
   },
     "production": {}
   },
